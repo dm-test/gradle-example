@@ -1,0 +1,9 @@
+logging:
+  file:
+    name: build/logs.log
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} [%t] %clr(%-5p) %c{1}:%L - %m%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss} [%t] %-5p %c{1}:%L - %m%n"
+  level:
+    root: WARN
+    com.github.dmtest: ${logLevel}
